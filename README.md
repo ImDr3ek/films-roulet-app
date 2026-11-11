@@ -1,16 +1,27 @@
-# React + Vite
+Uma rede social para cinéfilos compartilharem recomendações e acabarem com a indecisão usando uma roleta aleatória para escolher o próximo filme da noite. 🍿🎡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎬 Films Roulet
 
-Currently, two official plugins are available:
+O **Films Roulet** é um projeto escolar desenvolvido para criar uma rede social interativa para amantes de cinema. O objetivo principal é conectar pessoas através de recomendações de filmes e resolver o clássico problema da indecisão na hora de escolher o que assistir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ O que o projeto faz?
 
-## React Compiler
+* **Feed de Opiniões:** Os usuários podem postar suas avaliações e recomendações dos últimos filmes que assistiram.
+* **Lista de Desejos:** Viu uma indicação legal? Salve o filme na sua lista pessoal para não esquecer.
+* **🎡 Roleta de Filmes:** A principal funcionalidade! Se você não sabe o que assistir, basta girar a roleta e o sistema escolherá aleatoriamente um filme da sua lista de salvos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+Este projeto foi construído utilizando as seguintes tecnologias:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React** (Biblioteca principal para a interface)
+* **JavaScript** (Lógica e interatividade)
+* **CSS** (Estilização e design responsivo)
+
+## 🛠️ Como rodar o projeto localmente
+
+Como este é um projeto baseado em React, você precisará do [Node.js](https://nodejs.org/) instalado na sua máquina.
+
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/films-roulet.git](https://github.com/seu-usuario/films-roulet.git)
