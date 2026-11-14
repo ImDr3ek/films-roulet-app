@@ -1,0 +1,13 @@
+.principal_root{
+    height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo-primario);
+}
+
+.principal_conteudo{
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px;
+}

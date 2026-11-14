@@ -1,17 +1,22 @@
-import Avatar from "../Avatar/Avatar"
 import "./Cabecalho.css";
+import { useNavigate } from 'react-router-dom'
+import { FaRegHeart, FaPlus } from 'react-icons/fa'
 
-function Cabecalho(){
+function Cabecalho() {
+    const navigate = useNavigate();
+
     return (
-        <header className="Cabecalho_root">
-            <img 
-            src="/favicon.svg" 
-            style={{
-                width: "24px",
-                height: 24,
-            }} 
-            />
-            <Avatar nome="Test"/>
+        <header className="cabecalho_root">
+            <button className="cabecalho_botao"
+                aoClicar={() => navigate('/reacoes')}>
+                <FaRegHeart size={24} />
+            </button>
+
+            <div className="cabecalho_logo">films-roulet</div>
+            <button className="cabecalho_botao" 
+            onClick={() => navigate('/publicacao/nova')}>
+                <FaPlus size={24} />
+            </button>
         </header>
     )
 }

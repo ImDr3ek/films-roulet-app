@@ -31,4 +31,9 @@ a{
 
     /* INPUTS */
     --cor-fundo-inputs: #D9D9D9;
+
+      /* OUTRAS */
+  --cor-fundo-cartao: #2B2727;
+  --cor-borda: #3A3535;
+  --cor-erro: #E53935;
 }

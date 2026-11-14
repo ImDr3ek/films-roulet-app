@@ -1,0 +1,25 @@
+.rodape_root{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 18px;
+    background-color: var(--cor-fundo-primario);
+    border-top: 1px solid var(--cor-borda);
+}
+
+.rodape_botao{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-botoes-primarios);
+    color: var(--cor-fonte-primaria);
+    border: 2px solid trasparent;
+}
+
+.rodape_botao.ative{
+    background-color: var(--cor-textos-destacados);
+    border-color: var(--cor-fonte-primaria);
+}
