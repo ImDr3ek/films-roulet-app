@@ -8,17 +8,24 @@ html,
 body,
 #root{
     height: 100%;
-    font-family: sans-serif;
 }
 
-#root{
-    display: grid;
-   grid-template-rows: 48px 1fr 48px;
+body {
+  background-color: #000000;
+  color: var(--cor-fonte-primaria);
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+button {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
 }
 
 :root{
@@ -36,4 +43,8 @@ a{
   --cor-fundo-cartao: #2B2727;
   --cor-borda: #3A3535;
   --cor-erro: #E53935;
+
+      color-scheme: dark;
+
+
 }

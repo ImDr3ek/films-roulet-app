@@ -8,7 +8,7 @@ function Cabecalho() {
     return (
         <header className="cabecalho_root">
             <button className="cabecalho_botao"
-                aoClicar={() => navigate('/reacoes')}>
+                onClick={() => navigate('/reacoes')}>
                 <FaRegHeart size={24} />
             </button>
 
