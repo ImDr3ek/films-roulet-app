@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import Estrutura from '../componentes/Estrutura'
-import Inicio from '../paginas/Inicio'
-import CriarPublicacao from '../paginas/CriarPublicacao'
-import EmBreve from '../paginas/EmBreve'
+import Principal from './componentes/Principal/Principal'
+import Inicio from './paginas/Inicio/Inicio'
+import EmBreve from './paginas/EmBreve/EmBreve'
+import CriarPublicacao from './utils/CriarPublicacao/CriarPublicacao'
 
- function Roteador() {
+function Roteador() {
   return (
     <Routes>
-      <Route element={<Estrutura />}>
+      <Route element={<Principal />}>
         <Route path="/" element={<Inicio />} />
         <Route path="/publicacao/nova" element={<CriarPublicacao />} />
         <Route path="/roleta" element={<EmBreve titulo="Roleta" />} />

@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import './EscolherImagen.css'
+import './EscolherImagem.css'
 
 function EscolherImagem({ imagem, aoEscolher, aoErro }) {
   const campoImagem = useRef(null)
@@ -10,7 +10,7 @@ function EscolherImagem({ imagem, aoEscolher, aoErro }) {
       return
     }
 
-    if (arquivo.size > 3000000) {
+    if (arquivo.size > 2000000) {
       aoErro('A imagem é muito grande (máximo 2 MB).')
       return
     }

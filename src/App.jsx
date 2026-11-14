@@ -1,15 +1,10 @@
-import Cabecalho from "./componentes/Cabecalho/Cabecalho";
-import Rodape from "./componentes/Rodape/Rodape";
-import Roteador from "./Roteador";
+import { HashRouter } from 'react-router-dom'
+import Roteador from './Roteador'
 
-function App() {
-    return (
-        <>
-        <Cabecalho/>
-        <Roteador/>
-        <Rodape/>
-        </>
-    )
+export default function App() {
+  return (
+    <HashRouter>
+      <Roteador />
+    </HashRouter>
+  )
 }
-
-export default App

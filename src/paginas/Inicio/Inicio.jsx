@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import CartaoPublicacao from '../../componentes/CartaoPublicacao'
+import CartaoPublicacao from '../../componentes/CartaoPublicacao/CartaoPublicacao'
 import { listarPublicacoes } from '../../servicos/armazenamentoPublicacoes'
 import './Inicio.css'
 
