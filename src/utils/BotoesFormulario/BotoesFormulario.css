@@ -1,0 +1,19 @@
+.formulario_botoes {
+  display: flex;
+  gap: 12px;
+}
+
+.formulario_botoes button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.formulario_cancelar {
+  background-color: var(--cor-fundo-cartao);
+}
+
+.formulario_publicar {
+  background-color: var(--cor-botoes-primarios);
+}

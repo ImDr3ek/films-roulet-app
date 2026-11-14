@@ -1,0 +1,52 @@
+.cartao_publicacao_root {
+    margin-bottom: 24px;
+}
+
+.publicacao_cartao {
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: var(--cor-fundo-cartao);
+}
+
+.publicacao_cartao_imagem {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.publicacao_acoes {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.publicacao_botao {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo-inputs);
+    color: var(--cor-fundo-primario);
+}
+
+.publicacao_titulo {
+
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.publicacao_descricao {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.publicacao_hashtags {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--cor-textos-destacados);
+}

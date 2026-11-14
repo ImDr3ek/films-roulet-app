@@ -1,0 +1,14 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario_titulo {
+  font-size: 20px;
+}
+
+.formulario_erro {
+  color: var(--cor-erro);
+  font-size: 14px;
+}
