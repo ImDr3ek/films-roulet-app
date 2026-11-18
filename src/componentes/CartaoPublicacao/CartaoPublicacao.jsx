@@ -1,4 +1,5 @@
-import { FaRegComment, FaRegHeart, FaBars } from 'react-icons/fa'
+import { FaRegComment, FaRegHeart,} from 'react-icons/fa'
+import { RiGameLine } from "react-icons/ri";
 import './CartaoPublicacao.css'
 
 function CartaoPublicacao({ publicacao }) {
@@ -11,7 +12,7 @@ function CartaoPublicacao({ publicacao }) {
                 <div className="publicacao_acoes">
                     <button className="publicacao_botao"><FaRegComment size={18} /></button>
                     <button className="publicacao_botao"><FaRegHeart size={18} /></button>
-                    <button className="publicacao_botao"><FaBars size={18} /></button>
+                    <button className="publicacao_botao"><RiGameLine  size={20} /></button>
                 </div>
             </div>
 

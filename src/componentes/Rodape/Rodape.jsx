@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
-import { FaHome, FaDharmachakra, FaUser } from 'react-icons/fa'
+import { FaHome, FaUser } from 'react-icons/fa'
+import { RiGameLine } from "react-icons/ri"
 import './Rodape.css'
 
 function Rodape() {
@@ -10,7 +11,7 @@ function Rodape() {
             </NavLink>
 
             <NavLink to="/roleta" className="rodape_botao">
-                <FaDharmachakra size={20} />
+                <RiGameLine  size={22} />
             </NavLink>
 
             <NavLink to="/perfil" className="rodape_botao">

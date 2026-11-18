@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import EscolherImagem from '../EscolherImagem/EscolherImagem'
-import CamposTexto from '../CamposTexto/CamposTexto'
-import BotoesFormulario from '../BotoesFormulario/BotoesFormulario'
+import EscolherImagem from '../../componentes/EscolherImagem/EscolherImagem'
+import CamposTexto from '../../componentes/CamposTexto/CamposTexto'
+import BotoesFormulario from '../../componentes/BotoesFormulario/BotoesFormulario'
 import { publicar } from '../publicar/publicar'
 import './CriarPublicacao.css'
 
