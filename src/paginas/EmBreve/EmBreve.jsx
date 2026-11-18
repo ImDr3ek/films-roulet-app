@@ -1,6 +1,9 @@
+import "./Embreve.css"
+
+
 function EmBreve({ titulo }) {
   return (
-    <div style={{ textAlign: 'center', marginTop: '40px' }}>
+    <div className="emBreve_root">
       <p>{titulo}: em breve</p>
     </div>
   )
