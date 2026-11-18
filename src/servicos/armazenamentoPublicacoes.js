@@ -23,7 +23,6 @@ export function criarPublicacao(dados) {
     descricao: dados.descricao,
   }
 
-  // a mais nova aparece primeiro
   lista.unshift(nova)
   salvarLista(lista)
 }
