@@ -1,0 +1,11 @@
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+        
+        <rect x="0" y="0" width="1024" height="1024" rx="274" ry="274" fill="#3e3f41" />
+        <g transform="translate(512, 512) rotate(-180)">
+           <g transform="translate(-313, -313)">
+             <svg xmlns="http://www.w3.org/2000/svg" width="626" height="626" viewBox="0 0 24 24" fill="#027506" stroke="#027506" stroke-width="1.073482428115016" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rewind" fill-opacity="0"><polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon></svg>
+           </g>
+        </g>
+      </svg>
+    

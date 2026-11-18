@@ -12,7 +12,7 @@ export function publicar(dados) {
   try {
     criarPublicacao(dados)
     return ''
-  } catch (e) {
+  } catch {
     return 'Não deu para salvar. Tente uma imagem menor.'
   }
 }
