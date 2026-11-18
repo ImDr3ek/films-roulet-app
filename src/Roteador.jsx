@@ -1,21 +1,26 @@
-import { Routes, Route } from 'react-router-dom'
-import Principal from './componentes/Principal/Principal'
-import Inicio from './paginas/Inicio/Inicio'
-import EmBreve from './paginas/EmBreve/EmBreve'
-import CriarPublicacao from './utils/CriarPublicacao/CriarPublicacao'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Principal from "./componentes/Principal/Principal";
+import Inicio from "./paginas/Inicio/Inicio";
+import EmBreve from "./paginas/EmBreve/EmBreve";
+import CriarPublicacao from "./utils/CriarPublicacao/CriarPublicacao";
+
+const roteador = createBrowserRouter([
+  {
+    path: "",
+    element: <Principal />,
+    children: [
+      { path: "", element: <Inicio /> },
+      { path: "publicacao/nova", element: <CriarPublicacao /> },
+      { path: "roleta", element: <EmBreve titulo="Roleta" /> },
+      { path: "perfil", element: <EmBreve titulo="Perfil" /> },
+      { path: "reacoes", element: <EmBreve titulo="Reações" /> },
+    ],
+  },
+]);
 
 function Roteador() {
-  return (
-    <Routes>
-      <Route element={<Principal />}>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/publicacao/nova" element={<CriarPublicacao />} />
-        <Route path="/roleta" element={<EmBreve titulo="Roleta" />} />
-        <Route path="/perfil" element={<EmBreve titulo="Perfil" />} />
-        <Route path="/reacoes" element={<EmBreve titulo="Reações" />} />
-      </Route>
-    </Routes>
-  )
+  return <RouterProvider router={roteador} />;
 }
 
-export default Roteador
+export default Roteador;
