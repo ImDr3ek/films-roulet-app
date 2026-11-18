@@ -1,0 +1,7 @@
+.cabecalho_logo.cabecalho_usuario {
+  color: var(--cor-fundo-primario);
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
