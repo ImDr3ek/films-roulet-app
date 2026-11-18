@@ -8,10 +8,6 @@ export function publicar(dados) {
     return 'Escreva um título.'
   }
 
-const confirmou = window.confirm('Deseja realmente publicar?')
-  if (!confirmou) {
-    return 'Publicação cancelada.'
-  }
 
   try {
     criarPublicacao(dados)
