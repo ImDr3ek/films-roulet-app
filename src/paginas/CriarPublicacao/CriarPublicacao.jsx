@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom'
 import EscolherImagem from '../../componentes/EscolherImagem/EscolherImagem'
 import CamposTexto from '../../componentes/CamposTexto/CamposTexto'
 import BotoesFormulario from '../../componentes/BotoesFormulario/BotoesFormulario'
+import EditarPublicacao from '../../paginas/EditarPublicacao/EditarPublicacao'
 import { publicar } from '../../utils/publicar/publicar'
 import './CriarPublicacao.css'
 
 function CriarPublicacao() {
   const navegar = useNavigate()
+    const { id } = useParams()
 
   const [imagem, setImagem] = useState('')
   const [hashtags, setHashtags] = useState('')
@@ -30,6 +32,10 @@ function CriarPublicacao() {
     } else {
       setErro(mensagem)
     }
+  }
+
+  if (id !== undefined) {
+    return <EditarPublicacao id={id} />
   }
 
   return (
