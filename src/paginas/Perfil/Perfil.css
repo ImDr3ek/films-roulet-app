@@ -36,6 +36,7 @@
 }
 
 .perfil_abas {
+  margin: 0 -18px;
   display: flex;
   justify-content: space-around;
   padding: 12px 0;
