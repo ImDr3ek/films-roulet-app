@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,  useParams } from 'react-router-dom'
 import EscolherImagem from '../../componentes/EscolherImagem/EscolherImagem'
 import CamposTexto from '../../componentes/CamposTexto/CamposTexto'
 import BotoesFormulario from '../../componentes/BotoesFormulario/BotoesFormulario'

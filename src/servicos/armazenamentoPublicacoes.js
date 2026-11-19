@@ -43,3 +43,8 @@ export function excluirPublicacao(id) {
   const novaLista = lista.filter((item) => item.id !== id)
   salvarLista(novaLista)
 }
+
+export function buscarPublicacao(id) {
+  const lista = listarPublicacoes()
+  return lista.find((item) => String(item.id) === String(id))
+}

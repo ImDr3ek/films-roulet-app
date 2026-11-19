@@ -1,4 +1,4 @@
-import { atualizarPublicacao } from '../../servicos/armazenamentoPublicacoes'
+import { atualizarPublicacao } from './armazenamentoPublicacoes'
 
 
 export function atualizar(id, dados) {

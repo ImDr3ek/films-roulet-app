@@ -1,4 +1,4 @@
-import { excluirPublicacao } from '../../servicos/armazenamentoPublicacoes'
+import { excluirPublicacao } from './armazenamentoPublicacoes'
 
 
 export function apagar(id) {

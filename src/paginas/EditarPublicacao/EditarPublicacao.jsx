@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import EscolherImagem from '../../componentes/EscolherImagem/EscolherImagem'
 import CamposTexto from '../../componentes/CamposTexto/CamposTexto'
 import BotoesFormulario from '../../componentes/BotoesFormulario/BotoesFormulario'
-import { atualizar } from '../../utils/atualizar/atualizar'
-import { apagar } from '../../utils/apagar/apagar'
+import { atualizar } from '../../servicos/atualizar'
+import { apagar } from '../../servicos/apagarPublicacao'
 import { buscarPublicacao } from '../../servicos/armazenamentoPublicacoes'
 
 function EditarPublicacao({ id }) {
