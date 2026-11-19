@@ -3,7 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Principal from "./componentes/Principal/Principal";
 import Inicio from "./paginas/Inicio/Inicio";
 import EmBreve from "./paginas/EmBreve/EmBreve";
-import CriarPublicacao from "./utils/CriarPublicacao/CriarPublicacao";
+import Perfil from "./paginas/Perfil/Perfil";
+import CriarPublicacao from "./paginas/CriarPublicacao/CriarPublicacao";
 
 const roteador = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const roteador = createBrowserRouter([
       { path: "", element: <Inicio /> },
       { path: "publicacao/nova", element: <CriarPublicacao /> },
       { path: "roleta", element: <EmBreve titulo="Roleta" /> },
-      { path: "perfil", element: <EmBreve titulo="Perfil" /> },
+      { path: "perfil", element: <Perfil /> },
       { path: "reacoes", element: <EmBreve titulo="Reações" /> },
     ],
   },

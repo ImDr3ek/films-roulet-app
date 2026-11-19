@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import EscolherImagem from '../../componentes/EscolherImagem/EscolherImagem'
 import CamposTexto from '../../componentes/CamposTexto/CamposTexto'
 import BotoesFormulario from '../../componentes/BotoesFormulario/BotoesFormulario'
-import { publicar } from '../publicar/publicar'
+import { publicar } from '../../utils/publicar/publicar'
 import './CriarPublicacao.css'
 
 function CriarPublicacao() {

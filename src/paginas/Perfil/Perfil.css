@@ -1,0 +1,73 @@
+.perfil_root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.perfil_foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-fundo-cartao);
+  border: 3px solid var(--cor-borda);
+  margin-bottom: 8px;
+}
+
+.perfil_nome {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.perfil_descricao {
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.perfil_abas {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.perfil_aba {
+  width: 44px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil_grade {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  align-content: start;
+  padding-top: 14px;
+  scrollbar-width: none;
+}
+
+.perfil_grade::-webkit-scrollbar {
+  display: none;
+}
+
+.perfil_vazio {
+  margin-top: 30px;
+  text-align: center;
+}
