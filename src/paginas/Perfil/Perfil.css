@@ -57,8 +57,7 @@
   min-height: 0;
   overflow-y: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+grid-template-columns: repeat(3, minmax(0, 1fr));  gap: 8px;
   align-content: start;
   padding-top: 14px;
   scrollbar-width: none;

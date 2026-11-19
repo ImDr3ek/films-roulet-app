@@ -12,6 +12,11 @@ function salvarLista(lista) {
   localStorage.setItem(CHAVE, JSON.stringify(lista))
 }
 
+export function buscarPublicacao(id) {
+  const lista = listarPublicacoes()
+  return lista.find((item) => String(item.id) === String(id))
+}
+
 export function criarPublicacao(dados) {
   const lista = listarPublicacoes()
 
@@ -30,7 +35,7 @@ export function criarPublicacao(dados) {
 export function atualizarPublicacao(id, dados) {
   const lista = listarPublicacoes()
   const novaLista = lista.map((item) => {
-    if (item.id === id) {
+    if (String(item.id) === String(id)) {
       return { ...item, ...dados }
     }
     return item
@@ -40,11 +45,6 @@ export function atualizarPublicacao(id, dados) {
 
 export function excluirPublicacao(id) {
   const lista = listarPublicacoes()
-  const novaLista = lista.filter((item) => item.id !== id)
+  const novaLista = lista.filter((item) => String(item.id) !== String(id))
   salvarLista(novaLista)
-}
-
-export function buscarPublicacao(id) {
-  const lista = listarPublicacoes()
-  return lista.find((item) => String(item.id) === String(id))
 }
