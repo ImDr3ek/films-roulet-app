@@ -12,7 +12,8 @@ const roteador = createBrowserRouter([
     element: <Principal />,
     children: [
       { path: "", element: <Inicio /> },
-{ path: "publicacao/:id?", element: <CriarPublicacao /> },      { path: "roleta", element: <EmBreve titulo="Roleta" /> },
+{ path: "publicacao/:id?", element: <CriarPublicacao /> },  
+    { path: "roleta", element: <EmBreve titulo="Roleta" /> },
       { path: "perfil", element: <Perfil /> },
       { path: "reacoes", element: <EmBreve titulo="Reações" /> },
     ],

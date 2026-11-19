@@ -14,7 +14,7 @@ function Cabecalho() {
 
             <div className="cabecalho_logo">films-roulet</div>
             <button className="cabecalho_botao" 
-            onClick={() => navigate('/publicacao/nova')}>
+            onClick={() => navigate('/publicacao')}>
                 <FaPlus size={24} />
             </button>
         </header>
