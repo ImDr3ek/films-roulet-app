@@ -1,4 +1,4 @@
-import "./Embreve.css"
+import "./EmBreve.css"
 
 
 function EmBreve({ titulo }) {
