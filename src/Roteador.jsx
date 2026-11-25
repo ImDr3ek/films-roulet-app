@@ -5,6 +5,7 @@ import Inicio from "./paginas/Inicio/Inicio";
 import EmBreve from "./paginas/EmBreve/EmBreve";
 import Perfil from "./paginas/Perfil/Perfil";
 import CriarPublicacao from "./paginas/CriarPublicacao/CriarPublicacao";
+import PaginaCadastroUsuario from "./paginas/PaginaCadastroUsuario/PaginaCadastroUsuario";
 
 const roteador = createBrowserRouter([
   {
@@ -12,10 +13,11 @@ const roteador = createBrowserRouter([
     element: <Principal />,
     children: [
       { path: "", element: <Inicio /> },
-{ path: "publicacao/:id?", element: <CriarPublicacao /> },  
-    { path: "roleta", element: <EmBreve titulo="Roleta" /> },
+      { path: "publicacao/:id?", element: <CriarPublicacao /> },
+      { path: "roleta", element: <EmBreve titulo="Roleta" /> },
       { path: "perfil", element: <Perfil /> },
       { path: "reacoes", element: <EmBreve titulo="Reações" /> },
+      { path: "cadastrousuario", element: <PaginaCadastroUsuario /> },
     ],
   },
 ]);
